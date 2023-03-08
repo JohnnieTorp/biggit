@@ -1,14 +1,149 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-/* 
-1. Header
-2. Main
-3. Footer
-*/
-h1 {
-  font-family: orbitron, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Orbitron", sans-serif;
+  color: #fbfbfb;
+}
+
+p {
+  font-family: "Krona One", sans-serif;
+  color: #fbfbfb;
+}
+
+/*-------------------Header-------------------*/
+header {
+  position: relative;
+  background-color: #161616;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 50px;
+  margin-right: auto;
+  border-radius: 50%;
+  margin: 10px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header nav ul li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #FBFBFB;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*-------------------Main-------------------*/
+/*-------------------Footer-------------------*/
+footer {
+  height: auto;
+  background-image: url("../img/ernest-karchmit-UAbg0py6GYQ-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+footer div {
+  display: grid;
+  grid-template-columns: auto 40% 40% auto;
+  grid-template-rows: auto 40% 40% auto;
+}
+footer div img {
+  height: 140%;
+  border-radius: 20px;
+  grid-area: 2/2/3/3;
+}
+footer div form {
+  grid-area: 2/3/3/4;
+}
+footer div form a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #fbfbfb;
+  padding: 20px 75px;
+  background-color: #43F9DA;
+  border-radius: 20px;
+}
+footer div form a:hover {
+  text-decoration: underline;
+}
+footer input[type=text], footer input[type=email], footer input[type=tel], footer select, footer textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
+  width: 60%;
+  padding: 1em;
+  border: 1px solid #43F9DA;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 1em 0;
+}
+
+.send {
+  color: #161616;
+}
+
+.visually-hidden { /*Bootstrap defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/*---------------------------------------------------------------------------------------------De nedeste links i footer------------------------------------------------------------------------------------*/
+.footerbund {
+  display: grid;
+  grid-template-columns: auto 20% 20% 20% 20% auto;
+  grid-template-rows: auto;
+}
+.footerbund div {
+  display: inline;
+  vertical-align: top;
+  margin-bottom: 100px;
+}
+.footerbund div ul {
+  margin-top: 1em;
+}
+.footerbund div:nth-of-type(1) {
+  grid-area: 1/2/2/3;
+}
+.footerbund div:nth-of-type(1) ul {
+  margin-top: 4em;
+}
+.footerbund div:nth-of-type(2) {
+  grid-area: 1/3/2/4;
+}
+.footerbund div:nth-of-type(3) {
+  grid-area: 1/4/2/5;
+}
+.footerbund div:nth-of-type(4) {
+  grid-area: 1/5/2/6;
+}
+
+.footerh {
+  color: #43F9DA;
+}
+
+.copyright {
+  background-color: #fbfbfb;
+  width: 100%;
+}
+.copyright p {
+  color: #161616;
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

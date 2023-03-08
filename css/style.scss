@@ -1,16 +1,27 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Orbitron', sans-serif;
+    color: #fbfbfb;
+}
+p{
+    font-family: 'Krona One', sans-serif;
+    color: #fbfbfb;
 }
 //---------- Indholdsfortegnelse -----------//
-/* 
-1. Header
-2. Main
-3. Footer
-*/ 
-h1{
-    font-family: orbitron, sans-serif;
-}
+
+/*-------------------Header-------------------*/
+@import 'header';
+
+/*-------------------Main-------------------*/
+
+
+/*-------------------Footer-------------------*/
+@import 'footer'
