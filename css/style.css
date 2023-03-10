@@ -16,6 +16,10 @@ p {
   color: #fbfbfb;
 }
 
+address {
+  font-style: normal;
+}
+
 /*-------------------Header-------------------*/
 header {
   position: relative;
