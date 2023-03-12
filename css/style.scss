@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: partials.$bg-color; 
+ }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Orbitron', sans-serif;
     color: #fbfbfb;
@@ -15,9 +18,7 @@ p{
     font-family: 'Krona One', sans-serif;
     color: #fbfbfb;
 }
-address {
-    font-style: normal;
-}
+
 //---------- Indholdsfortegnelse -----------//
 
 /*-------------------Header-------------------*/

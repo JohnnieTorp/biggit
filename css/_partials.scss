@@ -1,5 +1,16 @@
 //variabler
 $bg-color: #161616;
 $font-color: #fbfbfb;
+$grey-bg-color: #727479;
+$purple-bg-color: #59189E;
+$dark-green-bg-color: #006F70;
 $btn-color: #43F9DA;
 
+@mixin heading($justify: center, $align: center) {
+    display: block;
+    justify-content: $justify;
+    align-items: $align;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+}
