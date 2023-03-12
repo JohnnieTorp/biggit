@@ -1,6 +1,6 @@
 footer{
     height: auto;
-    background-image: url("../img/ernest-karchmit-UAbg0py6GYQ-unsplash.jpg");
+    background-image: url("../img/footer-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -89,6 +89,22 @@ footer{
         div:nth-of-type(4){
             grid-area: 1/ 5/ 2/ 6;   
     }
+}
+#socialmedia{
+    padding-top: 1.5em;
+
+    img{
+        width: 30px;
+        height: auto;
+        margin-right: 0.5em;
+    } 
+}
+.social {
+    display: block;
+    padding-bottom: 1em;
+}
+.social img {
+    float: left;
 }
 .footerh{
     color: #43F9DA;
