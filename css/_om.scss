@@ -1,0 +1,11 @@
+@use 'partials';
+
+body{
+   background-color: #161616; 
+}
+#about-us {
+    background-image: url("../img/mac-about-page-with-biggit.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}

@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'partials';
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@700&display=swap');
 
 
@@ -24,7 +24,8 @@ address {
 @import 'header';
 
 /*-------------------Main-------------------*/
-
-
-/*-------------------Footer-------------------*/
-@import 'footer'
+// Om os side ///////
+@import 'om';
+//
+//*-------------------Footer-------------------*/
+@import 'footer';
