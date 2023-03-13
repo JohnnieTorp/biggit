@@ -58,7 +58,7 @@ header nav ul li a:hover {
 
 /*-------------------Main-------------------*/
 .team {
-  background-image: url("../img/mac-about-page-with-biggit.png");
+  background-image: url(../img/mac-about-page-with-biggit.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -205,14 +205,12 @@ footer div form a {
   background-color: #43F9DA;
   border-radius: 20px;
 }
-footer div form a {
-  text-decoration: none;
-}
-footer div form a:hover {
+footer div a:hover {
   -webkit-text-decoration: underline white;
           text-decoration: underline white;
 }
-footer input[type=text], footer input[type=email], footer input[type=tel], footer select, footer textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
+
+input[type=text], input[type=email], input[type=tel], select, textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
   width: 60%;
   padding: 1em;
   border: 1px solid #43F9DA;
@@ -250,6 +248,31 @@ footer input[type=text], footer input[type=email], footer input[type=tel], foote
 }
 .footerbund div ul {
   margin-top: 1em;
+}
+.footerbund div ul a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #fbfbfb;
+  padding: 20px 75px;
+  background-color: #43F9DA;
+  border-radius: 20px;
+}
+.footerbund div ul a:link {
+  text-decoration: none;
+}
+.footerbund div ul a:visited {
+  text-decoration: none;
+}
+.footerbund div ul a:hover {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+.footerbund div ul a:active {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+.footerbund div ul li a {
+  text-decoration: none;
 }
 .footerbund div:nth-of-type(1) {
   grid-area: 1/2/2/3;
