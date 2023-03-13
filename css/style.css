@@ -77,8 +77,12 @@ footer div form a {
   background-color: #43F9DA;
   border-radius: 20px;
 }
+footer div form a {
+  text-decoration: none;
+}
 footer div form a:hover {
-  text-decoration: underline;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
 }
 footer input[type=text], footer input[type=email], footer input[type=tel], footer select, footer textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
   width: 60%;
