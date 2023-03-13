@@ -21,27 +21,37 @@
             padding-right: 2em;
             padding-bottom: 1em;
         }
+        img {
+            float: left;
+            max-width: 200px;
+            height: auto;
+            border-radius: 12px; 
+            margin-right: 1.5em;
+            margin-bottom: 2em;
+        }
         .om-text {
-            text-align: center;
-            padding-top: 3em;
+            display: block;
+            text-align: left;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 2em;
             padding-left: 20vw;
             padding-right: 20vw;
             padding-bottom: 1em;
         }
-        .om-text2 {
-            text-align: center;
-            padding-bottom: 1em;
-        }
+       
 }       
 #about-us {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-      
+    
 }
 
-#four-steps {
+.four-steps {
     display: block;
     background-color: partials.$grey-bg-color;
+    padding-bottom: 10vh;
+    
 
         h2 {
             @include partials.heading;
@@ -58,4 +68,42 @@
             width: 30vh;
             height: auto; 
         }
+        a {
+        text-align: center;
+        margin: auto;
+        text-decoration: underline #fbfbfb;
+        }
+}
+.video-blog{
+    display: block;
+    background-image: url(../img/redgreen-smoke-about-page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+        
+}
+.video-blog-txt {
+    justify-content: center;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+
+    h3{
+        @include partials.heading;
+    }
+}
+
+.video-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    img{
+        max-width: 300px;
+        height: auto;
+        margin: auto;
+        }
+    a{ 
+        padding-top: 1em;
+    }
 }

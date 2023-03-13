@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Orbitron", sans-serif;
+  font-weight: 900;
   color: #fbfbfb;
 }
 
@@ -45,6 +47,9 @@ header nav ul li {
 header nav ul li a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
+  font-family: Orbitron, sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
   color: #FBFBFB;
 }
 header nav ul li a:hover {
@@ -67,6 +72,7 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
   font-size: 2em;
+  font-weight: 900;
   text-align: center;
   padding: 1em;
 }
@@ -77,15 +83,22 @@ header nav ul li a:hover {
   padding-right: 2em;
   padding-bottom: 1em;
 }
+.team img {
+  float: left;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+}
 .team .om-text {
-  text-align: center;
-  padding-top: 3em;
+  display: block;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2em;
   padding-left: 20vw;
   padding-right: 20vw;
-  padding-bottom: 1em;
-}
-.team .om-text2 {
-  text-align: center;
   padding-bottom: 1em;
 }
 
@@ -94,29 +107,74 @@ header nav ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
 }
 
-#four-steps {
+.four-steps {
   display: block;
   background-color: #727479;
+  padding-bottom: 10vh;
 }
-#four-steps h2 {
+.four-steps h2 {
   display: block;
   justify-content: center;
   align-items: center;
   font-size: 2em;
+  font-weight: 900;
   text-align: center;
   padding: 1em;
 }
-#four-steps img:nth-of-type(1) {
+.four-steps img:nth-of-type(1) {
   display: block;
   margin: auto;
   width: 110vh;
   height: auto;
 }
-#four-steps img:nth-of-type(2) {
+.four-steps img:nth-of-type(2) {
   display: block;
   margin-left: 0;
   width: 30vh;
   height: auto;
+}
+.four-steps a {
+  text-align: center;
+  margin: auto;
+  -webkit-text-decoration: underline #fbfbfb;
+          text-decoration: underline #fbfbfb;
+}
+
+.video-blog {
+  display: block;
+  background-image: url(../img/redgreen-smoke-about-page.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.video-blog-txt {
+  justify-content: center;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+.video-blog-txt h3 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  padding: 1em;
+}
+
+.video-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.video-links img {
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+}
+.video-links a {
+  padding-top: 1em;
 }
 
 footer {
