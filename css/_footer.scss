@@ -4,11 +4,10 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-        div{
-            display: grid;
-            grid-template-columns: auto 40% 40%  auto;
-            grid-template-rows: auto 40% 40% auto;
-        }
+    div{
+        display: grid;
+        grid-template-columns: auto 40% 40%  auto;
+        grid-template-rows: auto 40% 40% auto;
         img{
             height: 140%;
             border-radius: 20px;
@@ -24,13 +23,14 @@ footer{
                 background-color: #43F9DA;
                 border-radius: 20px;
             }
-        }
+                
+            }
             a:hover{
                 text-decoration: underline white;
             }
-        
-}
-        
+        }
+
+        }
         input[type=text], input[type=email],input[type=tel], select, textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
             width: 60%;
             padding: 1em;
@@ -78,7 +78,7 @@ footer{
                 text-decoration: none;
                 color: #fbfbfb;
                 padding: 20px 75px ;
-                background-color: #43F9DA;
+                // background-color: #43F9DA;
                 border-radius: 20px;
             }
             a:link {

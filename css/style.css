@@ -254,7 +254,6 @@ input[type=text], input[type=email], input[type=tel], select, textarea { /*vælg
   text-decoration: none;
   color: #fbfbfb;
   padding: 20px 75px;
-  background-color: #43F9DA;
   border-radius: 20px;
 }
 .footerbund div ul a:link {
