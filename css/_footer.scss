@@ -72,6 +72,10 @@ footer{
         display: inline;
         vertical-align: top;
         margin-bottom: 100px;
+        
+        // .footerh h2{
+        //     margin-bottom: 0.5em;
+        // }
         ul{
             a{
                 transition: all 0.3s ease 0s;
@@ -117,23 +121,26 @@ address {
     font-style: normal;
 }
 #socialmedia{
-    padding-top: 1.5em;
+    // padding-top: 1em;
 
     img{
         width: 30px;
         height: auto;
-        margin-right: 0.5em;
+        margin-right: 1em;
     } 
 }
 .social {
     display: block;
-    padding-bottom: 1em;
+    // padding-bottom: 1em;
 }
 .social img {
     float: left;
 }
 .footerh{
     color: #43F9DA;
+    // h2 p{
+    //     padding-bottom: 5em;
+    // }
 }
 
 .copyright{

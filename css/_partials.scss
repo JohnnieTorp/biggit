@@ -16,3 +16,17 @@ $btn-color: #43F9DA;
     text-align: center;
     padding: 1em;
 }
+
+@mixin arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        
+        img{
+            width: 2em;
+            height: auto;
+            margin: 0 auto;
+            
+        }   
+}
