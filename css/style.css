@@ -491,7 +491,7 @@ main div:nth-of-type(6) div .btn a:hover {
           text-decoration: underline #161616;
 }
 main div:nth-of-type(7) {
-  background-image: url("../img/review-background-with biggit.png");
+  background-image: url("../img/review-background-with-biggit.png");
   background-size: cover;
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
