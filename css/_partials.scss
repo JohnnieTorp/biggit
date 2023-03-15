@@ -17,6 +17,15 @@ $green: #2A7E79;
     text-align: center;
     padding: 1em;
 }
+@mixin heading-mobile{
+    display: block;
+    justify-content:space-around;
+    align-content: space-around;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: left;
+    padding: 1.5em;
+}
 
 @mixin arrow{
         display: flex;

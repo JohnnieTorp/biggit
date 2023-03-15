@@ -507,29 +507,126 @@ main .div7 img:nth-of-type(6) {
     padding: 0;
     overflow-x: hidden;
   }
+  .fixed-chat {
+    display: none;
+  }
+  .fixed-cta {
+    bottom: 55px;
+    right: 30px;
+  }
+  .team {
+    background-image: url(../img/about-mobile-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+  }
+  .team h1 {
+    display: block;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: left;
+    padding: 1.5em;
+    font-size: 2em;
+  }
+  .team .om-text {
+    display: block;
+    text-align: left;
+    padding-top: 2em;
+    padding-left: 0.5em;
+    padding-right: 0;
+    padding-bottom: 1em;
+  }
   .about-us {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-columns: minmax(0, 375px);
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     row-gap: 0;
     min-width: 0;
   }
-  .about-us h1 {
-    padding: 0.5em;
-  }
   .about-us img {
     max-width: 60vw;
     height: auto;
-    margin: 0, auto;
+    margin-left: 2.5em;
     padding-top: 1em;
-    padding-bottom: 1em;
-    border-radius: 15px;
+    padding-bottom: 0.5em;
+    border-radius: 20%;
     overflow: hidden;
+    float: none;
   }
   .about-us p {
-    padding-bottom: 1em;
+    padding-top: 0;
+    padding-bottom: 2em;
+    padding-left: 2.5em;
+  }
+  .four-steps {
+    display: block;
+    padding-bottom: 1vh;
+  }
+  .four-steps h2 {
+    display: block;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: left;
+    padding: 1.5em;
+  }
+  .four-steps img:nth-of-type(1) {
+    display: block;
+    margin: auto;
+    width: 80vw;
+    height: auto;
+  }
+  .four-steps img:nth-of-type(2) {
+    display: block;
+    margin-left: 0;
+    width: 35vw;
+    height: auto;
+  }
+  .four-steps .scrollarrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+  .four-steps .scrollarrow img {
+    width: 2em;
+    height: auto;
+    margin: 0 auto;
+  }
+  .video-blog-txt h3 {
+    display: block;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: left;
+    padding: 1.5em;
+  }
+  .video-blog-txt .om-text2 {
+    padding-top: 0;
+    padding-bottom: 2em;
+    padding-left: 2.5em;
+    padding-right: 0.5em;
+  }
+  .video-links {
+    display: block;
+    margin-left: 1.5em;
+  }
+  .video-links img {
+    max-width: 85vw;
+    height: auto;
+    margin-left: 0.5em;
+  }
+  .video-links a p {
+    margin-left: 1em;
+    margin-bottom: 2em;
+    padding-right: 0.5em;
   }
 }
 footer {
