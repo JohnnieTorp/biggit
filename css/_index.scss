@@ -37,7 +37,8 @@ main{
             }
         }
     }}
-    div:nth-of-type(2){
+
+    .div2{
         background-color: partials.$bg-color;
         padding: 7% 0;
         text-align: center;
@@ -60,7 +61,7 @@ main{
             }
             }
         }
-    div:nth-of-type(3){
+    .div3{
         background-color: partials.$green;
         padding: 3% 0;
         div{
@@ -110,7 +111,7 @@ main{
             }
         }
     }
-    div:nth-of-type(4){
+    .div4{
         background-image: url("../img/frontpage-videosection-with-biggit.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -120,7 +121,7 @@ main{
             padding-top: 5%;
         }
     }
-    div:nth-of-type(5){
+    .div5{
         background-image: url("../img/frontpage-textsection-with-biggit.png");
         background-size: cover;
         padding-bottom: 10%;
@@ -163,7 +164,7 @@ main{
 
         }
     }
-    div:nth-of-type(6){
+    .div6{
         background-color: partials.$grey-bg-color;
         padding: 3% 0;
         div{
@@ -212,7 +213,7 @@ main{
             }
         }
     }
-    div:nth-of-type(7){
+    .div7{
         background-image: url("../img/review-background-with-biggit.png");
         background-size: cover;
         display: grid;
@@ -255,18 +256,7 @@ main{
     }
 }
 
-
-
-
-
-
-
-
-.livechat{
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-}
+@include partials.fixed;
 
 
 @media only screen and (max-width: 800px) {
