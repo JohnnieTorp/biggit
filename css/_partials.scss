@@ -31,3 +31,8 @@ $green: #2A7E79;
             
         }   
 }
+@mixin fixed{
+    position: fixed;
+    z-index: 1;
+    bottom: 5px;
+}

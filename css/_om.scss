@@ -46,9 +46,7 @@
 }
 //fixed elementer start///////////// 
 .fixed-chat{
-    position: fixed;
-    z-index: 1;
-    bottom: 5px;
+    @include partials.fixed;
     left: 5px;
     
     img{
@@ -57,9 +55,7 @@
     }
 } 
 .fixed-cta{
-    position: fixed;
-    z-index: 1;
-    bottom: 5px;
+    @include partials.fixed;
     right: 5px;
      
     a p {
