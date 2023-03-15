@@ -18,7 +18,7 @@ main{
             p{ 
                 margin-bottom: 3em;
             }
-            div{    
+            #kontaktbtn{    
             border: none;
             padding: 20px 0;
             margin-right: 60%;
@@ -64,7 +64,7 @@ main{
     .div3{
         background-color: partials.$green;
         padding: 3% 0;
-        div{
+        .border1{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -167,7 +167,7 @@ main{
     .div6{
         background-color: partials.$grey-bg-color;
         padding: 3% 0;
-        div{
+        .border2{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -256,249 +256,6 @@ main{
     }
 }
 
-@include partials.fixed;
 
 
-@media only screen and (max-width: 800px) {
-    main{
-        .introside{
-            background-image: url('../img/frontpage-top-background-with-white-textbox.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            h1{
-                color: partials.$bg-color;
-            }
-            p{
-                color: partials.$bg-color;
-            }
-            div{
-                padding: 10% 50% 10% 10%;
-                h1{
-                    font-size: x-large;
-                    margin-bottom: 1em;
-                }
-                p{ 
-                    margin-bottom: 3em;
-                }
-                div{    
-                border: none;
-                padding: 20px 0;
-                margin-right: 60%;
-                border-radius: 20px;
-                background-color: partials.$btn-color;
-                text-align: center;
-                a{     
-                transition: all 0.3s ease 0s;
-                text-decoration: none;
-                }
-                h2{
-                    color: partials.$bg-color;
-                }
-                a:hover{
-                    text-decoration: underline #161616;
-                }
-            }
-        }}
-        div:nth-of-type(2){
-            display: none;
-            }
-        div:nth-of-type(3){
-            background-color: partials.$green;
-            padding: 3% 0;
-            div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: partials.$green;
-                border:solid partials.$font-color;
-                margin: 2%;
-                border-radius: 30px;
-                .textbox{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    border: none;
-                    p{
-                        color: partials.$font-color;
-                        margin: 1em;
-                    }
-                    h2{
-                        color: partials.$font-color;
-                    }
-                }
-    
-                img{
-                    height: 40%;
-                    width: 40%;
-                    margin: 10%;
-                }
-                .btn{      
-                    border: none;  
-                    a{     
-                    transition: all 0.3s ease 0s;
-                    text-decoration: none;
-                    padding: 20px 75px ;
-                    background-color: partials.$btn-color;
-                    color: partials.$bg-color;
-                    border-radius: 20px;
-                    }
-                    h2{
-                        color: partials.$bg-color;
-                    }
-                    a:hover{
-                        text-decoration: underline #161616;
-                    }
-                }
-            }
-        }
-        div:nth-of-type(4){
-            background-image: url("../img/frontpage-videosection-with-biggit.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-bottom: 45%;
-            h2{
-                text-align: center;
-                padding-top: 5%;
-            }
-        }
-        div:nth-of-type(5){
-            background-image: url("../img/frontpage-textsection-with-biggit.png");
-            background-size: cover;
-            padding-bottom: 10%;
-            .textbox1{
-                padding: 5%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                margin-right: 50%;
-                a{
-                    margin-top: 1em;
-                    text-decoration: underline partials.$font-color;
-                }
-                p{
-                    color: partials.$font-color;
-                    margin-bottom: 1em;
-                }
-                h2{
-                    margin-bottom: 1em;
-                }
-            }
-            .textbox2{
-                padding: 5%;
-                background: none;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                text-align: left;
-                margin-left: 50%;
-                a{
-                    margin-top: 1em;
-                    text-decoration: underline partials.$font-color;
-                }
-                p{
-                    margin-bottom: 1em;
-                }
-                h2{
-                    margin-bottom: 1em;
-                }
-    
-            }
-        }
-        div:nth-of-type(6){
-            background-color: partials.$grey-bg-color;
-            padding: 3% 0;
-            div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: partials.$grey-bg-color;
-                border:solid partials.$font-color;
-                margin: 2%;
-                border-radius: 30px;
-                .textbox{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    border: none;
-                    p{
-                        color: partials.$font-color;
-                        margin: 1em;
-                    }
-                    h2{
-                        color: partials.$font-color;
-                    }
-                }
-    
-                img{
-                    height: 50%;
-                    width: 50%;
-                }
-                .btn{      
-                    border: none;  
-                    a{     
-                    transition: all 0.3s ease 0s;
-                    text-decoration: none;
-                    padding: 20px 75px ;
-                    background-color: partials.$btn-color;
-                    color: partials.$bg-color;
-                    border-radius: 20px;
-                    }
-                    h2{
-                        color: partials.$bg-color;
-                    }
-                    a:hover{
-                        text-decoration: underline #161616;
-                    }
-                }
-            }
-        }
-        div:nth-of-type(7){
-            background-image: url("../img/review-background-with\ biggit.png");
-            background-size: cover;
-            display: grid;
-            grid-template-columns: 10% 40% 40% 10%;
-            grid-row: auto auto auto auto;
-            padding: 5% 0;
-            img{
-                height: 90%;
-                width: 90%;
-            }
-            h2{
-                grid-area: 1/ 2/ 2/ 4;
-                margin: 0 auto;
-            }
-            p{
-                grid-area: 1/ 2/ 2/ 4;
-                margin: 4em auto;
-            }
-            p:nth-of-type(2){
-                margin-top: 8em;
-            }
-            img:nth-of-type(1){
-                grid-area: 2/ 2/ 3/ 3;
-            }
-            img:nth-of-type(2){
-                grid-area: 2/ 3/ 3/ 4;
-            }
-            img:nth-of-type(3){
-                grid-area: 3/ 2/ 4/ 3;
-            }
-            img:nth-of-type(4){
-                grid-area: 3/ 3/ 4/ 4;
-            }
-            img:nth-of-type(5){
-                grid-area: 4/ 2/ 5/ 2;
-            }
-            img:nth-of-type(6){
-                grid-area: 4/ 3/ 5/ 4;
-            }
-        }
-    }
-    .livechat{
-        position: fixed;
-        z-index: 1;
-        bottom: 0;
-    }
-}
+@media only screen and (max-width: 800px) {}
