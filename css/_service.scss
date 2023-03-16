@@ -12,11 +12,18 @@
         @include partials.heading;
         font-size: 2em;
     }
+    .desktop-pakker{
     img{
         display: block;
         margin: 0 auto;
         width: 70vw;
         height: auto;
+        }   
+    }
+    .mobil-pakker{
+        img{
+            display: none;
+        }
     }
     .om-text {
         display: block;
@@ -74,15 +81,23 @@
         padding-left: 20vw;
         padding-right: 20vw;
         padding-bottom: 2em;
-    }  
-    img{
-        display: block;
-        margin: 0 auto;
-        width: 70vw;
-        height: auto;
+    } 
+    .desktop-6-steps{
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 85vw;
+            height: auto;
+            }
+    } 
+    .mobil-6-steps{
+        img{
+        display: none;
+        }
     }
 }
 // section slut /////
+
 
 //// mobil version ////
 @media screen and (min-width: 160px) and (max-width: 800px){
@@ -94,10 +109,47 @@
         padding: 0;
         overflow-x: hidden;
     }
+    .pakker{
+        background-image: url(../img/mac-mobile-services-page.png);
+    
+        .desktop-pakker{
+            img{
+            display: none;
+            }
+        }
+        .mobil-pakker {
+            img{
+            display: block;
+            width: 70vw;
+            height: auto;
+            margin-left: 15vw;
+            }
+        }
+    }
     .fixed-chat{
         display: none;
     } 
     .fixed-cta{
         bottom: 55px;
         right: 30px;
+        z-index: 1;
     }
+    .tidslinje{
+        background-color: partials.$green;
+        text-align: left;
+        font-size: 0.9em;
+    
+    .desktop-6-steps{
+        img{ 
+        display: none;
+        }
+    }
+    .mobil-6-steps{
+            img{ 
+                display: block;
+                width: 100vw;
+                height: auto;
+            }
+        }
+    }
+}

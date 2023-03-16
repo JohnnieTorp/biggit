@@ -624,7 +624,8 @@ main .div7 img:nth-of-type(6) {
     display: none;
   }
   .fixed-cta {
-    display: none;
+    bottom: 55px;
+    right: 30px;
   }
 }
 .team {
@@ -964,11 +965,14 @@ main .div7 img:nth-of-type(6) {
   padding: 1em;
   font-size: 2em;
 }
-.pakker img {
+.pakker .desktop-pakker img {
   display: block;
   margin: 0 auto;
   width: 70vw;
   height: auto;
+}
+.pakker .mobil-pakker img {
+  display: none;
 }
 .pakker .om-text {
   display: block;
@@ -1042,14 +1046,62 @@ main .div7 img:nth-of-type(6) {
   padding-right: 20vw;
   padding-bottom: 2em;
 }
-.tidslinje img {
+.tidslinje .desktop-6-steps img {
   display: block;
   margin: 0 auto;
-  width: 70vw;
+  width: 85vw;
   height: auto;
 }
+.tidslinje .mobil-6-steps img {
+  display: none;
+}
 
+@media screen and (min-width: 160px) and (max-width: 800px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .pakker {
+    background-image: url(../img/mac-mobile-services-page.png);
+  }
+  .pakker .desktop-pakker img {
+    display: none;
+  }
+  .pakker .mobil-pakker img {
+    display: block;
+    width: 70vw;
+    height: auto;
+    margin-left: 15vw;
+  }
+  .fixed-chat {
+    display: none;
+  }
+  .fixed-cta {
+    bottom: 55px;
+    right: 30px;
+    z-index: 1;
+  }
+  .tidslinje {
+    background-color: #2A7E79;
+    text-align: left;
+    font-size: 0.9em;
+  }
+  .tidslinje .desktop-6-steps img {
+    display: none;
+  }
+  .tidslinje .mobil-6-steps img {
+    display: block;
+    width: 100vw;
+    height: auto;
+  }
+}
 .dead-end {
+  background-color: #59189E;
+}
+.dead-end h1 {
   display: block;
   justify-content: center;
   align-items: center;
@@ -1057,8 +1109,8 @@ main .div7 img:nth-of-type(6) {
   font-weight: 900;
   text-align: center;
   padding: 1em;
-  font-size: 2em;
-  background-color: #59189E;
+  font-size: 3em;
+  padding-top: 4em;
 }
 .dead-end img {
   display: block;
