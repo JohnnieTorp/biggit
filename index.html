@@ -18,12 +18,18 @@
 
 <header>
     <a><img class="logo" src="img/black-on-white-with-name.png" alt="logo"></a>
-        <nav>
+        <nav class="desctopnav">
             <ul>
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="om.html">Om os</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="">Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="mobilnav">
+            <ul>
+                <a href="#"><img class="chatmobil" src="img/livechat-mobile-icon.png" alt="chat ikon til mobil"></a>
+                <a href="#"><img class="burgermenu" src="img/hamburger-mobile.png" alt="burger menu"></a>
             </ul>
         </nav>
 </header>
@@ -35,36 +41,40 @@
 
 
 <main>
-    <img class="livechat" src="img/livechat-icon.png" alt="Live chat">
     <section class="introside">
         <div class="forside"><h1>BiggIt Media - vi skræddersyer 
             digitale løsninger til din virksomhed!
         </h1>
+        <img class="gruppebillede" src="img/group-photo-layer-biggit-hand.png" alt="billede af biggit holdet">
         <p>Book et uforpligtende møde i dag og lad os hjælpe 
             din virksomhed til succes</p>
-        <div id="kontaktbtn"><a href="#"><h2>Kontakt</h2></a></div></div>
+        <div><a href="#"><h2>Kontakt</h2></a></div></div>
     </section>
     <section class="div2">
         <h2>Er du klar til at vækste din virksomhed</h2>
         <div><a href="#"><h2>Kontakt</h2></a></div>
+        <img class="pilned" src="img/scroll-arrow.png" alt="scroll ned pil">
     </section>
     <section class="div3">
         <div class="border1">
             <div class="textbox">
-        <h2>Hjælp til din markedsføring? </h2>
+        <h2>Hjælp til din markedsføring?</h2>
+        <img class="textbillede1" src="img/thinkingman-w-brownhair.png" alt="">
         <p>Bliver du lidt forvirret når det 
             handler om websider, grafisk 
             identitet, SEO og 
-            markedsføring til din virksomhed? </p>
+            markedsføring til din virksomhed?</p>
         <p>- bare rolig det hjælper vi 
             dig gerne med.</p>
-        <div class="btn"><a href="#"><h2>Kontakt</h2></a></div>
+        <div id="kontaktbtn"><a href="#"><h2>Kontakt</h2></a></div>
             </div>
         <img src="img/thinkingman-w-brownhair.png" alt="">
         </div>
+        <img class="pilned" src="img/scroll-arrow.png" alt="scroll ned pil">
     </section>
     <section class="div4"> 
         <h2>Vi er ikke som de andre</h2>
+        <img class="pilned" src="img/scroll-arrow.png" alt="scroll ned pil">
     </section>
     <section class="div5">
         <div class="textbox1"><h2>Skab synlighed og succes på nettet!</h2>
@@ -74,24 +84,27 @@
         <p>Vi styrker din branding og hjælper dig med at nå ud til din 
             målgruppe på de sociale medier.</p>
         <a href="#"><p>Lær mere om hvad vi kan tilbyde!</p></a></div>
+        <img class="biggit" src="img/black-shadoweffect-eyes-looking-up-left.png" alt="">
         <div class="textbox2"><h2>Vi er din digitale samarbejdspartner</h2>
         <p>Vi er et passioneret team der brænder for at skabe succes for vores kunder.</p>
         <p>Vi har fingeren på pulsen og arbejder med de nyeste trends og teknologier.</p>
         <p>Vores kunder er altid i centrum og med i hele processen, fra idé til implementering.</p>
         <a href="#"><p>Læs mere om hvordan vi samarbejder</p></a></div>
+        <img class="pilned" src="img/scroll-arrow.png" alt="scroll ned pil">
     </section>
     <section class="div6">
         <div class="border2">
         <img src="img/24-7-blondegirl.png" alt="">
-        <div class="textbox">
+        <div class="textbox1">
         <h2>Har du problemer med din hjemmeside?</h2>
+        <img class="textbillede2" src="img/24-7-blondegirl.png" alt="">
         <p>Som kunde hos BiggIt Media, kan du altid 
             ringe eller skrive for at få hjælp.</p>
         <p>- vi har åben 24 / 7.</p>
         <p>Tel.: + 45 01 23 45 67</p>
-        <div class="btn"><a href="#"><h2>Kontakt</h2></a></div>
-        </div>
-        </div>
+        <div id="kontaktbtn"><a href="#"><h2>Kontakt</h2></a></div>
+        </div></div>
+        <div class="pildiv"><img class="pilned" src="img/scroll-arrow.png" alt="scroll ned pil"></div>
     </section>
     <section class="div7">
         <h2>Tidligere samarbejdespartnere</h2>
@@ -104,7 +117,9 @@
         <img src="img/dinbus-review.png" alt="">
         <img src="img/brdr-fransen-review.png" alt="brdr fransen review">
     </section>
-    
+    <div class="fixed-chat">
+        <a href="#"><img src="img/livechat-icon.png" alt="livechat taleboble ikon"></a>
+    </div>
 </main>
 
 
@@ -117,17 +132,18 @@
 
 <footer>
     <div>
+        <h3 class="kontaktfootermobil">Kontakt</h3>
         <img src="img/footer-map-greyscale.png" alt="google kort for adressen">
         <form>
-            <h3>Kontakt</h3>
+            <h3 class="kontaktfooter">Kontakt</h3>
             <label class="visually-hidden" for="navn">Navn</label><!--navn skal label og indput ha for at hænge sammen-->
-                <input placeholder="Navn" type="text" id="navn">
+                <input class="input" placeholder="Navn" type="text" id="navn">
 
-            <label class="visually-hidden" for="telefon">Telefonnummer</label>
-                <input placeholder="Telefon" type="tel" id="telefon">
+                <label class="visually-hidden" for="telefon">Telefonnummer</label>
+                <input class="input" placeholder="Telefon" type="tel" id="telefon">
 
                 <label class="visually-hidden"> <for="mail">E-mail</label>
-                    <input placeholder="E-mail" type="email" id="email">
+                <input class="input" placeholder="E-mail" type="email" id="email">
                 <div><a href="#"><h3 class="send">Send</h3></a></div>
         </form>
         </div>
@@ -135,23 +151,23 @@
         <div>
         <h2 class="footerh">BiggIt Media</h2>
             <ul>
-            <li><address><p>Havneparken 1, 6000 Kolding Danmark</p></address></li>
-            <li><a href="tel:+4501234567"><p>Tlf: +45 01 23 45 67</p></a></li>
-            <li><a href="mailto:biggit@biggitmedia.dk"><p>biggit@biggitmedia.dk</p></a></li>
+            <li><a href="#"><p>Havneparken 1, 6000 Kolding Danmark</p></a></li>
+            <li><a href="#"><p>Tlf: +45 01 23 45 67</p></a></li>
+            <li><a href="#"><p>Email: biggit@biggitmedia.dk</p></a></li>
             </ul>
         </div>
         <div>
             <ul id="socialmedia">
-                    <li class="social"><a href="#"><img src="img/LinkedIn.png" alt="LinkedIn logo"><h3>Linkedin</h3></a></li>
-                    <li class="social"><a href="#"><img src="img/Facebook.png" alt="Facebook logo"><h3>Facebook</h3></a></li>
-                    <li class="social"><a href="#"><img src="img/Behance.png" alt="Behance logo"><h3>Behance</h3></a></li>
-                    <li class="social"><a href="#"><img src="img/Instagram.png" alt="Instagram logo"><h3>Instagram</h3></a></li>
-            </ul>
+                <li class="social"><a href="#"><img src="img/LinkedIn.png" alt="LinkedIn logo"><p>Linkedin</p></a></li>
+                <li class="social"><a href="#"><img src="img/Facebook.png" alt="Facebook logo"><p>Facebook</p></a></li>
+                <li class="social"><a href="#"><img src="img/Behance.png" alt="Behance logo"><p>Behance</p></a></li>
+                <li class="social"><a href="#"><img src="img/Instagram.png" alt="Instagram logo"><p>Instagram</p></a></li>
+        </ul>
         </div>
         <div>
             <h3 class="footerh">LINKS</h3>
             <ul>
-            <li><a href="#"><p>Hvad er SEO</p></a></li>
+            <li><a href="#"><p>Hvad der SEO</p></a></li>
             <li><a href="#"><p>Teknisk SEO</p></a></li>
             <li><a href="#"><p>Linkbuilding</p></a></li>
             <li><a href="#"><p>Søgeordsanalyse</p></a></li>
@@ -177,6 +193,7 @@
     </div>
     <div class="copyright">
         <p class="copyrighttxt">2023 - ALL RIGHTS RESERVED BIGGIT MEDIA</p>
+    </div>
     </div>
 </footer>
 

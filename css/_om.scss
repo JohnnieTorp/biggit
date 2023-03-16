@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding-top: 2em;
+    padding-top: 7%;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 3em;
@@ -182,6 +182,7 @@
         background-repeat: no-repeat;
         background-attachment:local;
         background-size: cover;
+        padding-top: 20% !important;
         
         h1{
             @include partials.heading-mobile;

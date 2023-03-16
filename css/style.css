@@ -24,12 +24,13 @@ p {
 
 /*-------------------Header-------------------*/
 header {
-  position: relative;
   background-color: #161616;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1;
 }
 header img {
   width: 50px;
@@ -56,9 +57,36 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+.mobilnav {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .desctopnav {
+    display: none;
+  }
+  .mobilnav {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+  }
+  .mobilnav img {
+    float: left;
+    border-radius: 0;
+  }
+  .mobilnav .burgermenu {
+    width: 24%;
+  }
+  .mobilnav .chatmobil {
+    width: 38%;
+  }
+}
 /*-------------------Main-------------------*/
+main {
+  padding-top: 7%;
+}
 main .introside {
-  background-image: url("../img/frontpage-top-background-with-white-textbox.png");
+  background-image: url("../img/frontpage-top-background-with-white-textbox2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -78,7 +106,7 @@ main .introside div h1 {
 main .introside div p {
   margin-bottom: 3em;
 }
-main .introside div #kontaktbtn {
+main .introside div div {
   border: none;
   padding: 20px 0;
   margin-right: 60%;
@@ -86,20 +114,20 @@ main .introside div #kontaktbtn {
   background-color: #43F9DA;
   text-align: center;
 }
-main .introside div #kontaktbtn a {
+main .introside div div a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
-main .introside div #kontaktbtn h2 {
+main .introside div div h2 {
   color: #161616;
 }
-main .introside div #kontaktbtn a:hover {
+main .introside div div a:hover {
   -webkit-text-decoration: underline #161616;
           text-decoration: underline #161616;
 }
 main .div2 {
   background-color: #161616;
-  padding: 7% 0;
+  padding: 7% 0 2% 0;
   text-align: center;
 }
 main .div2 div {
@@ -120,9 +148,21 @@ main .div2 div a:hover {
   -webkit-text-decoration: underline #161616;
           text-decoration: underline #161616;
 }
+main .div2 .pilned {
+  background-color: transparent;
+  width: 30px;
+  height: auto;
+  margin: 75px auto 0 12%;
+  padding: 0;
+}
 main .div3 {
   background-color: #2A7E79;
-  padding: 3% 0;
+  padding: 3% 0 1% 0;
+}
+main .div3 .pilned {
+  display: flex;
+  width: 30px;
+  margin: 2% auto 0 45%;
 }
 main .div3 .border1 {
   display: flex;
@@ -142,7 +182,7 @@ main .div3 .border1 .textbox {
 }
 main .div3 .border1 .textbox p {
   color: #fbfbfb;
-  margin: 1em;
+  margin: 1em 1em 1em 2.6em;
 }
 main .div3 .border1 .textbox h2 {
   color: #fbfbfb;
@@ -152,38 +192,30 @@ main .div3 .border1 img {
   width: 40%;
   margin: 10%;
 }
-main .div3 .border1 .btn {
-  border: none;
-}
-main .div3 .border1 .btn a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  padding: 20px 75px;
-  background-color: #43F9DA;
-  color: #161616;
-  border-radius: 20px;
-}
-main .div3 .border1 .btn h2 {
-  color: #161616;
-}
-main .div3 .border1 .btn a:hover {
-  -webkit-text-decoration: underline #161616;
-          text-decoration: underline #161616;
-}
 main .div4 {
   background-image: url("../img/frontpage-videosection-with-biggit.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 45%;
+  padding-bottom: 2%;
 }
 main .div4 h2 {
   text-align: center;
   padding-top: 5%;
 }
+main .div4 .pilned {
+  display: flex;
+  width: 30px;
+  margin: 43% auto 0 45%;
+}
 main .div5 {
   background-image: url("../img/frontpage-textsection-with-biggit.png");
   background-size: cover;
-  padding-bottom: 10%;
+  padding-bottom: 2%;
+}
+main .div5 .pilned {
+  display: flex;
+  width: 30px;
+  margin: 5% auto 0 45%;
 }
 main .div5 .textbox1 {
   padding: 5%;
@@ -226,7 +258,12 @@ main .div5 .textbox2 h2 {
 }
 main .div6 {
   background-color: #727479;
-  padding: 3% 0;
+  padding: 3% 0 1% 0;
+}
+main .div6 .pilned {
+  display: flex;
+  width: 30px;
+  margin: 2% auto 0 45%;
 }
 main .div6 .border2 {
   display: flex;
@@ -237,41 +274,23 @@ main .div6 .border2 {
   margin: 2%;
   border-radius: 30px;
 }
-main .div6 .border2 .textbox {
+main .div6 .border2 .textbox1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: none;
 }
-main .div6 .border2 .textbox p {
+main .div6 .border2 .textbox1 p {
   color: #fbfbfb;
-  margin: 1em;
+  margin: 1em 1em 1em 2em;
 }
-main .div6 .border2 .textbox h2 {
+main .div6 .border2 .textbox1 h2 {
   color: #fbfbfb;
 }
 main .div6 .border2 img {
   height: 50%;
   width: 50%;
-}
-main .div6 .border2 .btn {
-  border: none;
-}
-main .div6 .border2 .btn a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  padding: 20px 75px;
-  background-color: #43F9DA;
-  color: #161616;
-  border-radius: 20px;
-}
-main .div6 .border2 .btn h2 {
-  color: #161616;
-}
-main .div6 .border2 .btn a:hover {
-  -webkit-text-decoration: underline #161616;
-          text-decoration: underline #161616;
 }
 main .div7 {
   background-image: url("../img/review-background-with-biggit.png");
@@ -315,13 +334,306 @@ main .div7 img:nth-of-type(6) {
   grid-area: 4/3/5/4;
 }
 
+#kontaktbtn {
+  border: none;
+  padding: 20px 75px;
+  background-color: #43F9DA;
+  border-radius: 20px;
+  margin-top: 2em;
+}
+#kontaktbtn a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  background-color: #43F9DA;
+  color: #161616;
+}
+#kontaktbtn h2 {
+  color: #161616;
+}
+#kontaktbtn a:hover {
+  -webkit-text-decoration: underline #161616;
+          text-decoration: underline #161616;
+}
+
+.fixed-chat {
+  position: fixed;
+  z-index: 1;
+  bottom: 5px;
+  left: 5px;
+}
+.fixed-chat img {
+  width: 100px;
+  height: auto;
+}
+
+.gruppebillede, .textbillede1, .textbillede2, .biggit {
+  display: none;
+}
+
+/*------------------------------------mobil-----------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  main {
+    padding-top: 20% !important;
+  }
+  main .introside {
+    background-image: url("../img/frontpage-mobile-top-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .introside h1 {
+    color: #161616;
+    padding: 1em;
+  }
+  main .introside p {
+    color: #161616;
+    margin: 1em;
+  }
+  main .introside div {
+    padding: 0 0 10% 0;
+    margin: 0;
+  }
+  main .introside div .gruppebillede {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  main .introside div h1 {
+    font-size: x-large;
+    margin-bottom: 1em;
+    color: #fbfbfb;
+  }
+  main .introside div p {
+    margin-bottom: 3em;
+    color: #fbfbfb;
+  }
+  main .introside div div {
+    border: none;
+    padding: 20px 75px;
+    border-radius: 20px;
+    background-color: #43F9DA;
+    margin: 10% 10% 0 10%;
+  }
+  main .introside div div a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  main .introside div div h2 {
+    color: #161616;
+  }
+  main .introside div div a:hover {
+    -webkit-text-decoration: underline #161616;
+            text-decoration: underline #161616;
+  }
+  main .div2 {
+    display: none;
+  }
+  main .div3 {
+    background-color: #2A7E79;
+    padding: 3% 0;
+  }
+  main .div3 .border1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A7E79;
+    border: none;
+  }
+  main .div3 .border1 .textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+  }
+  main .div3 .border1 .textbox p {
+    color: #fbfbfb;
+    margin: 1em 1em 1em 2.6em;
+  }
+  main .div3 .border1 .textbox .textbillede1 {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+  main .div3 .border1 .textbox h2 {
+    color: #fbfbfb;
+  }
+  main .div3 .border1 img {
+    display: none;
+  }
+  main .div4 {
+    background-image: url("../img/frontpage-mobile-videosection.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+  }
+  main .div4 .pilned {
+    display: block;
+    padding-top: 62%;
+  }
+  main .div4 h2 {
+    text-align: center;
+    padding-top: 5%;
+  }
+  main .div5 {
+    background-image: none;
+    background-color: #421B76;
+    background-size: cover;
+    padding-bottom: 10%;
+  }
+  main .div5 .biggit {
+    display: block;
+    padding-left: 20%;
+  }
+  main .div5 .textbox1 {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  main .div5 .textbox1 a {
+    margin-top: 1em;
+    -webkit-text-decoration: underline #fbfbfb;
+            text-decoration: underline #fbfbfb;
+  }
+  main .div5 .textbox1 p {
+    color: #fbfbfb;
+    margin-bottom: 1em;
+  }
+  main .div5 .textbox1 h2 {
+    margin-bottom: 1em;
+  }
+  main .div5 .textbox2 {
+    padding: 5%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: none;
+    margin-left: 0;
+  }
+  main .div5 .textbox2 a {
+    margin-top: 1em;
+    -webkit-text-decoration: underline #fbfbfb;
+            text-decoration: underline #fbfbfb;
+  }
+  main .div5 .textbox2 p {
+    margin-bottom: 1em;
+  }
+  main .div5 .textbox2 h2 {
+    margin-bottom: 1em;
+  }
+  main .div6 {
+    background-color: #727479;
+    padding: 3% 0;
+  }
+  main .div6 .border2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #727479;
+    border: none;
+  }
+  main .div6 .border2 .textbox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+  }
+  main .div6 .border2 .textbox1 p {
+    color: #fbfbfb;
+    margin: 1em 1em 1em 2em;
+  }
+  main .div6 .border2 .textbox1 .textbillede2 {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+  main .div6 .border2 .textbox1 h2 {
+    color: #fbfbfb;
+  }
+  main .div6 .border2 img {
+    display: none;
+  }
+  main .div7 {
+    background-image: url("../img/review-background-with-biggit.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-row: auto auto auto auto auto auto auto auto;
+    padding: 5% 0;
+  }
+  main .div7 img {
+    height: auto;
+    width: 90%;
+  }
+  main .div7 h2 {
+    grid-area: 1/2/2/4;
+    margin: 0 auto;
+  }
+  main .div7 p {
+    grid-area: 1/2/2/4;
+    margin: 5em auto;
+  }
+  main .div7 p:nth-of-type(2) {
+    margin-top: 12em;
+  }
+  main .div7 img {
+    margin-bottom: 5%;
+  }
+  main .div7 img:nth-of-type(1) {
+    grid-area: 2/2/3/4;
+  }
+  main .div7 img:nth-of-type(2) {
+    grid-area: 3/2/4/4;
+  }
+  main .div7 img:nth-of-type(3) {
+    grid-area: 4/2/5/4;
+  }
+  main .div7 img:nth-of-type(4) {
+    grid-area: 5/2/6/4;
+  }
+  main .div7 img:nth-of-type(5) {
+    grid-area: 6/2/7/4;
+  }
+  main .div7 img:nth-of-type(6) {
+    grid-area: 7/2/8/4;
+  }
+  #kontaktbtn {
+    border: none;
+    padding: 20px 75px;
+    background-color: #43F9DA;
+    border-radius: 20px;
+    margin-top: 2em;
+  }
+  #kontaktbtn a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    background-color: #43F9DA;
+    color: #161616;
+  }
+  #kontaktbtn h2 {
+    color: #161616;
+  }
+  #kontaktbtn a:hover {
+    -webkit-text-decoration: underline #161616;
+            text-decoration: underline #161616;
+  }
+  .fixed-chat {
+    display: none;
+  }
+  .fixed-cta {
+    display: none;
+  }
+}
 .team {
   background-image: url(../img/mac-about-page-with-biggit.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding-top: 2em;
+  padding-top: 7%;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 3em;
@@ -522,6 +834,7 @@ main .div7 img:nth-of-type(6) {
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: cover;
+    padding-top: 20% !important;
   }
   .team h1 {
     display: block;
@@ -755,6 +1068,7 @@ main .div7 img:nth-of-type(6) {
 }
 
 footer {
+  overflow: hidden !important;
   height: auto;
   background-image: url("../img/footer-background.jpg");
   background-size: cover;
@@ -895,4 +1209,65 @@ address {
 .copyright p {
   color: #161616;
   width: 100vw;
+  z-index: 1;
+}
+
+.kontaktfootermobil {
+  display: none;
+}
+
+/*----------------------------------------------------------------mobil------------------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  footer div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    padding: 10% 10%;
+  }
+  footer div .kontaktfootermobil {
+    display: block;
+    grid-area: 1/1/2/2;
+    padding: 5% 0;
+    font-weight: 300;
+    font-size: xx-large;
+  }
+  footer div img {
+    grid-area: 2/1/3/2;
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+  }
+  footer div form {
+    grid-area: 3/1/4/2;
+  }
+  footer div form .input {
+    width: 100%;
+  }
+  footer div form .kontaktfooter {
+    display: none;
+  }
+  footer div div {
+    grid-area: 4/1/5/2;
+    padding: 10% 0;
+  }
+  footer .footerbund {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    padding: 0 15%;
+  }
+  footer .footerbund div:nth-of-type(1) {
+    grid-area: 1/1/2/2;
+  }
+  footer .footerbund div:nth-of-type(2) {
+    grid-area: 4/1/5/2;
+  }
+  footer .footerbund div:nth-of-type(2) .social {
+    padding-right: 100%;
+  }
+  footer .footerbund div:nth-of-type(3) {
+    grid-area: 2/1/3/2;
+  }
+  footer .footerbund div:nth-of-type(4) {
+    grid-area: 3/1/4/2;
+  }
 }/*# sourceMappingURL=style.css.map */
