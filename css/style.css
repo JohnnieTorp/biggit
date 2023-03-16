@@ -826,8 +826,7 @@ main .div7 img:nth-of-type(6) {
     display: none;
   }
   .fixed-cta {
-    bottom: 55px;
-    right: 30px;
+    display: block;
   }
   .team {
     background-image: url(../img/about-mobile-background.png);
