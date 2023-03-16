@@ -1,0 +1,83 @@
+@use 'partials';
+
+.pakker{
+    background-image: url(../img/mac-services-page.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 3em;
+    h1{
+        @include partials.heading;
+        font-size: 2em;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 70vw;
+        height: auto;
+    }
+    .om-text {
+        display: block;
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 2em;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-bottom: 1em;
+    }  
+  .scrollarrow{
+    @include partials.arrow;
+  }       
+}
+//fixed elementer start///////////// 
+.fixed-chat{
+    @include partials.fixed;
+    left: 5px;
+    
+    img{
+        width: 100px;
+        height: auto; 
+    }
+} 
+.fixed-cta{
+    @include partials.fixed;
+    right: 5px;
+     
+    a p {
+        background-color: partials.$btn-color;
+        color: partials.$bg-color;
+        border-radius: 20px;
+        padding: 1em;
+    }
+    a{
+        text-decoration: none;
+    }    
+        
+}
+//fixed elementer slut///////////// 
+// section start //
+.tidslinje{
+    background-color: partials.$grey-bg-color;
+    h2{
+        @include partials.heading;
+        font-size: 2em; 
+    }
+    .om-text {
+        display: block;
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1em;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-bottom: 2em;
+    }  
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 70vw;
+        height: auto;
+    }
+}
