@@ -427,7 +427,9 @@ main .div7 img:nth-of-type(6) {
 }
 .four-steps img:nth-of-type(2) {
   display: block;
-  margin-left: 0;
+  align-self: center;
+  margin: 0 auto;
+  padding-bottom: 2em;
   width: 20vw;
   height: auto;
 }
@@ -584,9 +586,11 @@ main .div7 img:nth-of-type(6) {
   }
   .four-steps img:nth-of-type(2) {
     display: block;
-    margin-left: 0;
+    align-self: center;
     width: 35vw;
     height: auto;
+    margin: 0 auto;
+    padding-bottom: 2em;
   }
   .four-steps .scrollarrow {
     display: flex;
