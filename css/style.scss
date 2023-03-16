@@ -33,5 +33,10 @@ p{
 @import 'om';
 
 //
+// 404 //
+.dead-end{
+    @include partials.heading;
+    font-size: 2em;
+}
 //*-------------------Footer-------------------*/
 @import 'footer';
