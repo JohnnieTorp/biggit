@@ -4,12 +4,13 @@
 
 
 header{
-    position: relative;
     background-color: #161616;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 1;
     img{
         width: 50px;
         margin-right: auto;
@@ -39,4 +40,29 @@ header{
 
     }
 }
+}
+.mobilnav{
+    display: none;
+}
+
+@media only screen and (max-width: 800px){
+    .desctopnav{
+        display: none;
+    }
+    .mobilnav{
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        img{
+            float: left;
+            border-radius: 0;
+        }
+        .burgermenu{
+            width: 24%;
+        }
+
+        .chatmobil{
+            width: 38%;
+        }
+    }
 }

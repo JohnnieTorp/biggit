@@ -18,12 +18,18 @@
 
 <header>
     <a href="index.html"><img class="logo" src="img/black-on-white-with-name.png" alt="logo"></a>
-        <nav>
+        <nav class="desctopnav">
             <ul>
                 <li><a href="index.html">Forside</a></li>
                 <li><a href="om.html">Om os</a></li>
                 <li><a href="service.html">Services</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="">Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="mobilnav">
+            <ul>
+                <a href="#"><img class="chatmobil" src="img/livechat-mobile-icon.png" alt="chat ikon til mobil"></a>
+                <a href="#"><img class="burgermenu" src="img/hamburger-mobile.png" alt="burger menu"></a>
             </ul>
         </nav>
 </header>
@@ -137,17 +143,18 @@
 
 <footer>
     <div>
+        <h3 class="kontaktfootermobil">Kontakt</h3>
         <img src="img/footer-map-greyscale.png" alt="google kort for adressen">
         <form>
-            <h3>Kontakt</h3>
+            <h3 class="kontaktfooter">Kontakt</h3>
             <label class="visually-hidden" for="navn">Navn</label><!--navn skal label og indput ha for at hænge sammen-->
-                <input placeholder="Navn" type="text" id="navn">
+                <input class="input" placeholder="Navn" type="text" id="navn">
 
                 <label class="visually-hidden" for="telefon">Telefonnummer</label>
-                <input placeholder="Telefon" type="tel" id="telefon">
+                <input class="input" placeholder="Telefon" type="tel" id="telefon">
 
                 <label class="visually-hidden"> <for="mail">E-mail</label>
-                    <input placeholder="E-mail" type="email" id="email">
+                    <input class="input" placeholder="E-mail" type="email" id="email">
                 <div><a href="#"><h3 class="send">Send</h3></a></div>
         </form>
         </div>

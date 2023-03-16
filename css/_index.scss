@@ -1,6 +1,7 @@
 main{
+    padding-top: 7%;
     .introside{
-        background-image: url('../img/frontpage-top-background-with-white-textbox.png');
+        background-image: url('../img/frontpage-top-background-with-white-textbox2.png');
         background-repeat: no-repeat;
         background-size: cover;
         h1{
@@ -18,7 +19,7 @@ main{
             p{ 
                 margin-bottom: 3em;
             }
-            #kontaktbtn{    
+            div{    
             border: none;
             padding: 20px 0;
             margin-right: 60%;
@@ -37,10 +38,9 @@ main{
             }
         }
     }}
-
     .div2{
         background-color: partials.$bg-color;
-        padding: 7% 0;
+        padding: 7% 0 2% 0;
         text-align: center;
 
         div{      
@@ -60,10 +60,22 @@ main{
                 text-decoration: underline #161616;
             }
             }
+            .pilned{
+                background-color: transparent;
+                width: 30px;
+                height: auto;
+                margin: 75px auto 0 12%;
+                padding: 0;
+            }
         }
     .div3{
         background-color: partials.$green;
-        padding: 3% 0;
+        padding: 3% 0 1% 0;
+        .pilned{
+            display: flex;
+            width: 30px;
+            margin: 2% auto 0 45%;
+        }
         .border1{
             display: flex;
             justify-content: center;
@@ -80,7 +92,7 @@ main{
                 border: none;
                 p{
                     color: partials.$font-color;
-                    margin: 1em;
+                    margin: 1em 1em 1em 2.6em;
                 }
                 h2{
                     color: partials.$font-color;
@@ -92,39 +104,32 @@ main{
                 width: 40%;
                 margin: 10%;
             }
-            .btn{      
-                border: none;  
-                a{     
-                transition: all 0.3s ease 0s;
-                text-decoration: none;
-                padding: 20px 75px ;
-                background-color: partials.$btn-color;
-                color: partials.$bg-color;
-                border-radius: 20px;
-                }
-                h2{
-                    color: partials.$bg-color;
-                }
-                a:hover{
-                    text-decoration: underline #161616;
-                }
-            }
         }
     }
     .div4{
         background-image: url("../img/frontpage-videosection-with-biggit.png");
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 45%;
+        padding-bottom: 2%;
         h2{
             text-align: center;
             padding-top: 5%;
+        }
+        .pilned{
+            display: flex;
+            width: 30px;
+            margin: 43% auto 0 45%;
         }
     }
     .div5{
         background-image: url("../img/frontpage-textsection-with-biggit.png");
         background-size: cover;
-        padding-bottom: 10%;
+        padding-bottom: 2%;
+        .pilned{
+            display: flex;
+            width: 30px;
+            margin: 5% auto 0 45%;
+        }
         .textbox1{
             padding: 5%;
             display: flex;
@@ -166,7 +171,12 @@ main{
     }
     .div6{
         background-color: partials.$grey-bg-color;
-        padding: 3% 0;
+        padding: 3% 0 1% 0;
+        .pilned{
+            display: flex;
+            width: 30px;
+            margin: 2% auto 0 45%;
+        }
         .border2{
             display: flex;
             justify-content: center;
@@ -175,7 +185,7 @@ main{
             border:solid partials.$font-color;
             margin: 2%;
             border-radius: 30px;
-            .textbox{
+            .textbox1{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -183,7 +193,7 @@ main{
                 border: none;
                 p{
                     color: partials.$font-color;
-                    margin: 1em;
+                    margin: 1em 1em 1em 2em;
                 }
                 h2{
                     color: partials.$font-color;
@@ -193,23 +203,6 @@ main{
             img{
                 height: 50%;
                 width: 50%;
-            }
-            .btn{      
-                border: none;  
-                a{     
-                transition: all 0.3s ease 0s;
-                text-decoration: none;
-                padding: 20px 75px ;
-                background-color: partials.$btn-color;
-                color: partials.$bg-color;
-                border-radius: 20px;
-                }
-                h2{
-                    color: partials.$bg-color;
-                }
-                a:hover{
-                    text-decoration: underline #161616;
-                }
             }
         }
     }
@@ -256,6 +249,303 @@ main{
     }
 }
 
+#kontaktbtn{      
+    border: none; 
+    padding: 20px 75px ;
+    background-color: partials.$btn-color;
+    border-radius: 20px;
+    margin-top: 2em;
+    a{     
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    background-color: partials.$btn-color;
+    color: partials.$bg-color;
+    }
+    h2{
+        color: partials.$bg-color;
+    }
+    a:hover{
+        text-decoration: underline #161616;
+    }
+}
+
+.fixed-chat{
+    @include partials.fixed;
+    left: 5px;
+    
+    img{
+        width: 100px;
+        height: auto; 
+    }
+} 
+.gruppebillede, .textbillede1, .textbillede2, .biggit{
+    display: none;
+}
 
 
-@media only screen and (max-width: 800px) {}
+
+
+
+
+
+/*------------------------------------mobil-----------------------------------------------------*/
+
+
+@media only screen and (max-width: 800px) {
+    main{
+        padding-top: 20% !important;
+    .introside{
+        background-image: url('../img/frontpage-mobile-top-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            color: partials.$bg-color;
+            padding: 1em;
+        }
+        p{
+            color: partials.$bg-color;
+            margin: 1em;
+        }
+        div{
+            padding: 0 0 10% 0;
+            margin: 0;
+            .gruppebillede{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            h1{
+                font-size: x-large;
+                margin-bottom: 1em;
+                color: partials.$font-color;
+            }
+            p{ 
+                margin-bottom: 3em;
+                color: partials.$font-color;
+            }
+            div{    
+            border: none;
+            padding: 20px 75px;
+            border-radius: 20px;
+            background-color: partials.$btn-color;
+            margin: 10% 10% 0 10%;
+            a{     
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+            }
+            h2{
+                color: partials.$bg-color;
+            }
+            a:hover{
+                text-decoration: underline #161616;
+            }
+        }
+    }}
+    .div2{
+        display: none;
+        }
+    .div3{
+        background-color: partials.$green;
+        padding: 3% 0;
+        .border1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: partials.$green;
+            border:none;
+            .textbox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: none;
+                p{
+                    color: partials.$font-color;
+                    margin: 1em 1em 1em 2.6em;
+                }
+                .textbillede1{
+                    display: block;
+                    width: 80%;
+                    height: auto;
+                }
+                h2{
+                    color: partials.$font-color;
+                }
+            }
+
+            img{
+                display: none;
+            }
+        }
+    }
+    .div4{
+        background-image: url("../img/frontpage-mobile-videosection.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 10%;
+        .pilned{
+            display: block;
+            padding-top: 62%;
+        }
+        h2{
+            text-align: center;
+            padding-top: 5%;
+        }
+    }
+    .div5{
+        background-image: none;
+        background-color: partials.$mobil-bg-purple;
+        background-size: cover;
+        padding-bottom: 10%;
+        .biggit{
+            display: block;
+            padding-left: 20%;
+        }
+        .textbox1{
+            padding: 5%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 0;
+            a{
+                margin-top: 1em;
+                text-decoration: underline partials.$font-color;
+            }
+            p{
+                color: partials.$font-color;
+                margin-bottom: 1em;
+            }
+            h2{
+                margin-bottom: 1em;
+            }
+        }
+        .textbox2{
+            padding: 5%;
+            background: none;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: none;
+            margin-left: 0;
+            a{
+                margin-top: 1em;
+                text-decoration: underline partials.$font-color;
+            }
+            p{
+                margin-bottom: 1em;
+            }
+            h2{
+                margin-bottom: 1em;
+            }
+
+        }
+    }
+    .div6{
+        background-color: partials.$grey-bg-color;
+        padding: 3% 0;
+        .border2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: partials.$grey-bg-color;
+            border: none;
+            .textbox1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: none;
+                p{
+                    color: partials.$font-color;
+                    margin: 1em 1em 1em 2em;
+                }
+                .textbillede2{
+                    display: block;
+                    width: 80%;
+                    height: auto;
+                }
+                h2{
+                    color: partials.$font-color;
+                }
+            }
+
+            img{
+                display: none;
+            }
+        }
+    }
+    .div7{
+        background-image: url("../img/review-background-with-biggit.png");
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-row: auto auto auto auto auto auto auto auto ;
+        padding: 5% 0;
+        img{
+            height: auto;
+            width: 90%;
+        }
+        h2{
+            grid-area: 1/ 2/ 2/ 4;
+            margin: 0 auto;
+        }
+        p{
+            grid-area: 1/ 2/ 2/ 4;
+            margin: 5em auto;
+        }
+        p:nth-of-type(2){
+            margin-top: 12em;
+        }
+        img{
+            margin-bottom: 5%;
+        }
+        img:nth-of-type(1){
+            grid-area: 2/ 2/ 3/ 4;
+        }
+        img:nth-of-type(2){
+            grid-area: 3/ 2/ 4/ 4;
+        }        
+        img:nth-of-type(3){
+            grid-area: 4/ 2/ 5/ 4;
+        }
+        img:nth-of-type(4){
+            grid-area: 5/ 2/ 6/ 4;
+        }
+        img:nth-of-type(5){
+            grid-area: 6/ 2/ 7/ 4;
+        }
+        img:nth-of-type(6){
+            grid-area: 7/ 2/ 8/ 4;
+        }
+
+    }
+  
+}
+
+#kontaktbtn{      
+    border: none; 
+    padding: 20px 75px ;
+    background-color: partials.$btn-color;
+    border-radius: 20px;
+    margin-top: 2em;
+    a{     
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    background-color: partials.$btn-color;
+    color: partials.$bg-color;
+    }
+    h2{
+        color: partials.$bg-color;
+    }
+    a:hover{
+        text-decoration: underline #161616;
+    }
+}
+
+.fixed-chat{
+display: none;
+} 
+.fixed-cta{
+display: none;     
+}
+}
