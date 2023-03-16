@@ -33,10 +33,20 @@ p{
 @import 'om';
 
 //
+// Service side //
+@import 'service';
 // 404 //
 .dead-end{
     @include partials.heading;
     font-size: 2em;
+    background-color: partials.$purple-bg-color;
+
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 40vw;
+        height: auto;
+    }
 }
 //*-------------------Footer-------------------*/
 @import 'footer';

@@ -633,6 +633,109 @@ main .div7 img:nth-of-type(6) {
     padding-right: 0.5em;
   }
 }
+.pakker {
+  background-image: url(../img/mac-services-page.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 3em;
+}
+.pakker h1 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+}
+.pakker img {
+  display: block;
+  margin: 0 auto;
+  width: 70vw;
+  height: auto;
+}
+.pakker .om-text {
+  display: block;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2em;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 1em;
+}
+.pakker .scrollarrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.pakker .scrollarrow img {
+  width: 2em;
+  height: auto;
+  margin: 0 auto;
+}
+
+.fixed-chat {
+  position: fixed;
+  z-index: 1;
+  bottom: 5px;
+  left: 5px;
+}
+.fixed-chat img {
+  width: 100px;
+  height: auto;
+}
+
+.fixed-cta {
+  position: fixed;
+  z-index: 1;
+  bottom: 5px;
+  right: 5px;
+}
+.fixed-cta a p {
+  background-color: #43F9DA;
+  color: #161616;
+  border-radius: 20px;
+  padding: 1em;
+}
+.fixed-cta a {
+  text-decoration: none;
+}
+
+.tidslinje {
+  background-color: #727479;
+}
+.tidslinje h2 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+}
+.tidslinje .om-text {
+  display: block;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1em;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 2em;
+}
+.tidslinje img {
+  display: block;
+  margin: 0 auto;
+  width: 70vw;
+  height: auto;
+}
+
 .dead-end {
   display: block;
   justify-content: center;
@@ -642,6 +745,13 @@ main .div7 img:nth-of-type(6) {
   text-align: center;
   padding: 1em;
   font-size: 2em;
+  background-color: #59189E;
+}
+.dead-end img {
+  display: block;
+  margin: 0 auto;
+  width: 40vw;
+  height: auto;
 }
 
 footer {
