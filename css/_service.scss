@@ -81,3 +81,22 @@
         height: auto;
     }
 }
+// section slut /////
+
+//// mobil version ////
+@media screen and (min-width: 160px) and (max-width: 800px){
+
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .fixed-chat{
+        display: none;
+    } 
+    .fixed-cta{
+        bottom: 55px;
+        right: 30px;
+    }
